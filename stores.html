@@ -7,98 +7,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stores Useful Links</title>
   <style>
+    .custom-btn {
+      font-family: "Lato", sans-serif;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      outline: none;
+      border: none;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
     .container {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: center;
-}
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+      justify-content: center;
+    }
 
-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
 
-a {
-  text-decoration: none;
-  font-family: Helvetica;
-  font-weight: bold;
-  color: lightpink;
-  font-size: 25px;
-  padding: 10px;
-  
-  text-align: center;
-}
-.container:before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to top left, teal 0%, pink 75%);
-  transform: translate3d(0px, 0px, 0) scale(0.95);
-  filter: blur(100px);
-  opacity: var(0.7);
-  transition: opacity 0.3s;
-}
-.item {
-  height: 125px;
-  min-width: 125px;
-  flex: 1;
-  margin: 50px;
-  top: 10px;
-  left: 10px;
-  font-size: 16px;
-  z-index: 999;
-  color: white;
-  background: teal;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-family: arial;
-  text-decoration: none;
-  box-shadow: gray 0 0 30px -20px, black 0 0 40px -15px;
-}
-.item:hover {
-  background: lightpink;
-  box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px 0px;
-}
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+      font-size: 25px;
+      padding: 10px;
+      text-align: center;
+    }
 
+    .container:before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to top left, teal 0%, pink 75%);
+      transform: translate3d(0px, 0px, 0) scale(0.95);
+      filter: blur(100px);
+      opacity: var(0.7);
+      transition: opacity 0.3s;
+    }
+
+    button:hover {
+      background: transparent;
+      box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+      color: #fff;
+    }
+
+    button:hover:after {
+      -webkit-transform: scale(2) rotate(180deg);
+      transform: scale(2) rotate(180deg);
+      box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    }
+
+    button {
+      height: 125px;
+      min-width: 125px;
+      flex: 1 1 20%;
+      margin: 50px;
+      top: 10px;
+      left: 10px;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: gray 0 0 30px -20px, black 0 0 40px -15px;
+    }
+
+    .btn-9:after {
+      position: absolute;
+      content: " ";
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #1fd1f9;
+      background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+      transition: all 0.3s ease;
+    }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="item">
+  <d class="container">
+    <button class="custom-btn">
       <a href="https://partscatalog.deere.com/jdrc/">John Deere Parts Lookup</a>
-    </div>
-    <div class="item">
+    </button>
+    <button class="custom-btn">
       <a href="https://eshiponline.purolator.com/ShipOnline/SecurePages/Public/FormsLogin.aspx?ReturnUrl=%2fShipOnline%2fuserinfo%2fhtmlreport.aspx%3fFromDate%3d20220607%26ToDate%3d20220624&FromDate=20220607&ToDate=20220624">Puro Shipping</a>
-    </div>
-    <div class="item"><a href="https://www.napaprolink.ca/login.aspx?ReturnUrl=%2f">Napa PRO-LINK</a></div>
-    <div class="item"><a href="https://www.toro.com/en-ca/parts">TORO Parts Lookup</a></div>
-    <div class="item"><a href="https://www.webersupply.com/">Weber Supply</a></div>
-    <div class="item"><a href="https://www.tenaquip.com/">Tenaquip</a></div>
-    <div class="item"><a href="https://www.uline.ca/">U-Line</a></div>
-    <div class="item"><a href="https://www.fastenal.ca/">Fastenal</a></div>
-    <div class="item"><a href="https://www.sanimarc.com/">Sani-Marc</a></div>
-    <div class="item"><a href="https://portico.oakville.ca/SitePages/Home.aspx">Portico</a></div>
-    <div class="item"><a href="https://roadsworks.oakville.ca/CentralStores/SitePages/Home.aspx">Central Stores</a></div>
-    <div class="item"><a href="https://www.michelinb2b.com/wps/portal/b2blogin/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zijQxMDA38_T2NgsO8DQw8Q10Dg0zM3I0NXE30wwkpiAJKG-AAjgZA_VGElBTkRhikOyoqAgBCAt8o/dz/d5/L2dBISEvZ0FBIS9nQSEh/?updatelang=Wed%20Sep%2007%202022%2009:13:13%20GMT-0400%20(Eastern%20Daylight%20Saving%20Time)&changeLocaleAction=true">Michelin B2B</a></div>
-    <div class="item"><a href="https://www.traction.com/en/">Traction</a></div>
-    <div class="item"><a href="https://www.bendix.com/en/">Bendix</a></div>
-    <div class="item"><a href="https://www.meritor.com/">Meritor</a></div>
-    <div class="item"><a href="http://colehersee.com.au/products/">Cole-Hersee</a></div>
-    <div class="item"><a href="https://secure.sayal.com/STORE2/shop.php">Sayal</a></div>
-    <div class="item"><a href="https://www.canadiantire.ca/en.html">Canadian Tire</a></div>
-    <div class="item"><a href="https://www.homedepot.ca/en/home.html">Home Depot</a></div>
-    <div class="item"></div>
-    <div class="item"></div>
+    </button>
+    <button class="custom-btn"><a href="https://www.napaprolink.ca/login.aspx?ReturnUrl=%2f">Napa PRO-LINK</a></button>
+    <button class="custom-btn"><a href="https://www.toro.com/en-ca/parts">TORO Parts Lookup</a></button>
+    <button class="custom-btn"><a href="https://www.webersupply.com/">Weber Supply</a></button>
+    <button class="custom-btn"><a href="https://www.tenaquip.com/">Tenaquip</a></button>
+    <button class="custom-btn"><a href="https://www.uline.ca/">U-Line</a></button>
+    <button class="custom-btn"><a href="https://www.fastenal.ca/">Fastenal</a></button>
+    <button class="custom-btn"><a href="https://www.sanimarc.com/">Sani-Marc</a></button>
+    <button class="custom-btn"><a href="https://portico.oakville.ca/SitePages/Home.aspx">Portico</a></button>
+    <button class="custom-btn"><a href="https://roadsworks.oakville.ca/CentralStores/SitePages/Home.aspx">Central Stores</a></button>
+    <button class="custom-btn"><a href="https://www.michelinb2b.com/wps/portal/b2blogin/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zijQxMDA38_T2NgsO8DQw8Q10Dg0zM3I0NXE30wwkpiAJKG-AAjgZA_VGElBTkRhikOyoqAgBCAt8o/dz/d5/L2dBISEvZ0FBIS9nQSEh/?updatelang=Wed%20Sep%2007%202022%2009:13:13%20GMT-0400%20(Eastern%20Daylight%20Saving%20Time)&changeLocaleAction=true">Michelin B2B</a></button>
+    <button class="custom-btn"><a href="https://www.traction.com/en/">Traction</a></button>
+    <button class="custom-btn"><a href="https://www.bendix.com/en/">Bendix</a></button>
+    <button class="custom-btn"><a href="https://www.meritor.com/">Meritor</a></button>
+    <button class="custom-btn"><a href="http://colehersee.com.au/products/">Cole-Hersee</a></button>
+    <button class="custom-btn"><a href="https://secure.sayal.com/STORE2/shop.php">Sayal</a></button>
+    <button class="custom-btn"><a href="https://www.canadiantire.ca/en.html">Canadian Tire</a></button>
+    <button class="custom-btn"><a href="https://www.homedepot.ca/en/home.html">Home Depot</a></button>
+    <button class="custom-btn"></buutton>
+      <button class="custom-btn"></buutton>
 
-  </div>
+        </div>
 </body>
 
 </html>
