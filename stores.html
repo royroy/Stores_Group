@@ -5,10 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stores Useful Links</title>
+  <title>Stores Links</title>
+
+  <link rel="icon" type="image/x-icon" href="https://corpcommunications.oakville.ca/LogoDownloads1/Oakville-centred-black.png">
   <style>
     .custom-btn {
-      font-family: "Lato", sans-serif;
+      font-family: basic-sans;
       background: transparent;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -17,7 +19,6 @@
       outline: none;
       border: none;
       transition: all 0.3s ease;
-      overflow: hidden;
     }
 
     .container {
@@ -31,17 +32,29 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex: 1;
+      flex: 1 1 auto;
     }
 
     a {
       text-decoration: none;
       font-weight: bold;
       color: black;
-      font-size: 25px;
-      padding: 10px;
-      text-align: center;
+      font-size: 26px;
+      padding: 5px;
+      height: 100%;
+      width: 100%;
+      display: inline-block;
+
+
     }
+html {
+    height: 100%;
+}
+body {
+    
+  background: -webkit-gradient(linear, left top, left bottom, from(#F03D6D), to(#C5F648)) fixed;
+
+}
 
     .container:before {
       content: "";
@@ -51,11 +64,13 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background: linear-gradient(to top left, teal 0%, pink 75%);
-      transform: translate3d(0px, 0px, 0) scale(0.95);
-      filter: blur(100px);
-      opacity: var(0.7);
-      transition: opacity 0.3s;
+ 
+    height: 100%;
+    margin: 0;
+    background-repeat: repeat;
+    background-attachment: fixed;
+      background-height: 100%;
+      width: 100%;
     }
 
     button:hover {
@@ -78,42 +93,24 @@
 
     button {
       height: 125px;
-      min-width: 125px;
-      flex: 1 1 20%;
-      margin: 50px;
-      top: 10px;
-      left: 10px;
-      justify-content: center;
-      align-items: center;
+      min-width: 200px;
+      max-width: 140px;
+      flex: 1 1 100%;
+      margin: 25px;
       z-index: 999;
-      border-radius: 10px;
+      border-radius: 20px;
       text-decoration: none;
-      box-shadow: gray 0 0 30px -20px, black 0 0 40px -15px;
-    }
+      box-shadow: lavender 0 0 30px -20px, black 0 0 40px -15px;
+align-items:center;
 
-    .btn-9:after {
-      position: absolute;
-      content: " ";
-      z-index: -1;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #1fd1f9;
-      background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
-      transition: all 0.3s ease;
     }
   </style>
 </head>
 
 <body>
   <d class="container">
-    <button class="custom-btn">
-      <a href="https://partscatalog.deere.com/jdrc/">John Deere Parts Lookup</a>
-    </button>
-    <button class="custom-btn">
-      <a href="https://eshiponline.purolator.com/ShipOnline/SecurePages/Public/FormsLogin.aspx?ReturnUrl=%2fShipOnline%2fuserinfo%2fhtmlreport.aspx%3fFromDate%3d20220607%26ToDate%3d20220624&FromDate=20220607&ToDate=20220624">Puro Shipping</a>
-    </button>
+    <button class="custom-btn"><a href="https://partscatalog.deere.com/jdrc/">John Deere Parts Lookup</a></button>
+    <button class="custom-btn"><a href="https://eshiponline.purolator.com/ShipOnline/SecurePages/Public/FormsLogin.aspx?ReturnUrl=%2fShipOnline%2fuserinfo%2fhtmlreport.aspx%3fFromDate%3d20220607%26ToDate%3d20220624&FromDate=20220607&ToDate=20220624">Puro Shipping</a></button>
     <button class="custom-btn"><a href="https://www.napaprolink.ca/login.aspx?ReturnUrl=%2f">Napa PRO-LINK</a></button>
     <button class="custom-btn"><a href="https://www.toro.com/en-ca/parts">TORO Parts Lookup</a></button>
     <button class="custom-btn"><a href="https://www.webersupply.com/">Weber Supply</a></button>
@@ -131,10 +128,15 @@
     <button class="custom-btn"><a href="https://secure.sayal.com/STORE2/shop.php">Sayal</a></button>
     <button class="custom-btn"><a href="https://www.canadiantire.ca/en.html">Canadian Tire</a></button>
     <button class="custom-btn"><a href="https://www.homedepot.ca/en/home.html">Home Depot</a></button>
-    <button class="custom-btn"></buutton>
-      <button class="custom-btn"></buutton>
-
-        </div>
+    <button class="custom-btn"><a href="https://zamboni.com/owners-area/">Zamboni Parts</a></buutton>
+      <button class="custom-btn"><a href="https://parts.cummins.com/">Cummins Parts</a></buutton>
+        <button class="custom-btn"><a href="https://roadsworks.oakville.ca/CentralStores/Parts%20Manuals/Forms/AllItems.aspx">Stores Parts Manuals</a></buutton>
+          <button class="custom-btn"><a href="https://points.oakvilleclothing.com/login">DNB Clothing</a></buutton>
+<button class="custom-btn"><a href="https://fuelzone.oakville.ca/">FUEL-ZONE</a></buutton>
+<button class="custom-btn"><a href="https://tap.oakville.ca/TransformContentCenter/index.fsp?pn=DOLResults&___csrfToken=34E6067B-D896-1346-82C5-38E90E8550C2S&d=14&f-1=-4&t-1=11&actionFlag=view14-1410835-1&viewDocLinkBase64=aW5kZXguZnNwP3BuPURPTFZpZXdEb2N1bWVudCZkPTE0JnE9MTQtMTQxMDgzNS0xJnE9MTQtMTQxMDgzNy0xJnE9MTQtMTQxMTE2Ny0xJnE9MTQtMTQxMTE3Mi0xJnE9MTQtMTQxMTE4My0xJnE9MTQtMTQxMTE5My0xJnE9MTQtMTQxMTE5NS0xJnE9MTQtMTQxMTE5OC0xJnE9MTQtMTQxMTQwNC0xJnE9MTQtMTQxMjE2MC0xJm89MTQtMTQxMDgzNS0xJnA9RGF0ZVN0b3JlZA==&actionGuid={081874F9-C739-4DDD-9420-FF7D9A724794}#ensureVisible/">Transform AP</a></buutton>
+            <button class="custom-btn"><a href="https://www.access.usbank.com/cpsApp1/AxolPreAuthServlet?requestCmdId=login">US Bank/PCOS</a></button>
+<button class="custom-btn"><a href="https://webapps.oakville.ca/productorderrequest/">POF Requests</a></button>
+  </div>
 </body>
 
 </html>
